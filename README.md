@@ -7,7 +7,7 @@ Example usage with Vagrant
 ==========================
 
 If you want to quickly set up a Minecraft server with this cookbook, just
-install the cookbook with knife:
+install the cookbook:
 
     gem install vagrant
     mkdir ~/myvagrant && cd ~/myvagrant
