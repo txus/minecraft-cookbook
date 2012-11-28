@@ -79,8 +79,3 @@ default.minecraft.options.generate_structures = true
 default.minecraft.options.view_distance = 10
 default.minecraft.options.motd = "Minecraft server"
 ```
-
-Usage
-=====
-
-
