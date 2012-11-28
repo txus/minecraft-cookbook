@@ -34,10 +34,9 @@ template "#{home_dir}/server/server.properties" do
   owner username
   mode 0700
 
-  notifies :stop, "minecraft_server[main]"
   notifies :start, "minecraft_server[main]"
 end
 
 minecraft_server "main" do
-  action [:stop, :start]
+  action [:start]
 end

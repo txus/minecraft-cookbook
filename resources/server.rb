@@ -1,1 +1,1 @@
-actions :start, :stop
+actions :start
