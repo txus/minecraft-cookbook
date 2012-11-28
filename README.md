@@ -9,9 +9,13 @@ Example usage with Vagrant
 If you want to quickly set up a Minecraft server with this cookbook, just
 install the cookbook with knife:
 
-    knife cookbook site install minecraft
+    gem install vagrant
+    mkdir ~/myvagrant && cd ~/myvagrant
+    mkdir cookbooks
+    git clone git://github.com/txus/minecraft-cookbook cookbooks/minecraft
+    vim Vagrantfile
 
-And here's a sample Vagrantfile:
+And here's the sample Vagrantfile:
 
 ```
 Vagrant::Config.run do |config|
@@ -37,6 +41,8 @@ Vagrant::Config.run do |config|
 end
 ```
 
+Now, `vagrant up` and `vagrant provision` and connect to your fresh new server
+at `33.33.33.10`! :)
 
 Attributes
 ==========
